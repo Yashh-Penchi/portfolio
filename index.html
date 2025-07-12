@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yashh_Portfolio!</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./cssFiles/animated-counter-prograssbar.css" />
+    <link rel="stylesheet" href="./cssFiles/style.css" />
+    <link rel="stylesheet" href="./cssFiles/responsive.css" />
+    <link rel="stylesheet" href="./cssFiles/uniqueTries.css" />
+  </head>
+  <body>
+    <div id="cursor"></div>
+
+    <div id="headerLine">
+      <div id="detailsSale">
+        <marquee behavior="scroll" direction="left">
+          <span style="padding: 0 10px">></span> Code <span style="padding: 0 10px"> ● </span> Creativity
+          <span style="padding: 0 10px"> ● </span> Consistency <span style="padding: 0 10px">|</span> UI Enthusiast &
+          Java Full-Stack Explorer <span style="padding: 0 10px">|</span> Explore My Digital World 🚀 !!...</marquee
+        >
+      </div>
+      <div id="socialIcon">
+        <a href="#instagram">Inst</a><a href="twitter">X</a><a href="Facebook">FB</a><a href="email">Email</a>
+      </div>
+    </div>
+    <header id="mainHeader">
+      <div id="logo"><h1>PortFolio <span style="position: absolute;">🚀</span></h1></div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#explore">About</a></li>
+          <li id="skillsNav"><a href="#section3">Skills</a></li>
+          <a href="#section4" id="projects">Projects</a>
+        </ul>
+        <span id="blog"><h5><a href="#section5">Blog</a></h5></span>
+        <span id="secondNav"><h5>⚙️</h5></span>
+      </nav>
+      <div id="secondNavBar">
+        <div id="secondNavClose">⚙️</div>
+        <nav>
+          <div id="inputSearch">
+            <input type="text" placeholder="Search Books !!" />
+            <span style="font-size: 1.3vw">🔍</span>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#section3">Skills</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Term & Conditions</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+          <div id="socialIconsForSecondNav">
+            <a href="#">Email</a><a href="#">Instagram</a><a href="#">X/ Twitter</a><a href="#">Linkdin</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="home" class="section1 sections">
+        <div id="content">
+          <h3>
+            <span style="font-size: 2.5vw; margin-left: 0.5vw">Hi,</span> <br />
+            I'am Yashh Lodha !!...
+          </h3>
+          <p>
+            Java Developer & Creative Designer 🚀, Turning Ideas into Interactive Experiences Currently pursuing BTech
+            CSE from SVCE Indore, Batch CSE'27, <br />
+            Let's build something amazing together!!...
+          </p>
+          <div id="buttons">
+            <button id="downloadCVBtn">
+  Download CV
+</button>
+
+            <button id="hireBtn">
+              Hire me
+              <div id="design">🫱🏻‍🫲🏻</div>
+            </button>
+          </div>
+        </div>
+        <div onclick="location.href='#explore'" class="nextPage1"><h5>Click here</h5><div>↓</div></div>
+      </div>
+
+      <div id="explore" class="section2 sections">
+        <div id="effect1"></div>
+        <div id="effect2"></div>
+        <h4 id="AboutHead">About Me</h4>
+        <div id="content">
+          <div id="Photo"><img src="./images/Yashh-05-19_18-24-51-281.jpg" /></div>
+          <div id="dtlsContent">
+            <h3>Yashh Lodha !!...</h3>
+            <p>
+              <b>Hey there! I'm Yashh Lodha, CSE'27 👋🏻</b> <br />
+              A passionate Java Full-Stack Developer and Creative Designer based in Indore. <br />
+              Currently pursuing BTech in Computer Science form "Swami Vivekanand College of Engineering Indore", <br />
+              I love transforming ideas into powerful, user-friendly web applications and beautiful interfaces.
+              <br /><br />
+              With a strong foundation in HTML, CSS, and JavaScript and Java, I blend code and creativity to build
+              modern, responsive, and engaging digital experiences. My focus is on clean code, seamless performance, and
+              pixel-perfect design — because your brand deserves the best. <br /><br />
+              When I’m not coding, you’ll find me exploring new tools, learning advanced frameworks, or designing
+              stunning visuals for clients and personal projects. <br /><br />
+              Let’s connect and build something extraordinary together! 🚀
+            </p>
+            <div id="socialIcons">
+              <a href="#">Email</a><a href="#" style="color: #0077B5;">Linkdin</a><a href="#">GitHub</a><a href="#">Instagram</a
+              ><a href="#">X</a>
+            </div>
+            <button id="contactBtn">Contact me</button>
+          </div>
+          <div onclick="location.href='#section3'" id="nextPage2"><div>↓</div></div>
+        </div>
+      </div>
+
+      <div id="section3" class="section3 sections">
+        <svg id="svgDesign" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#000000"
+            fill-opacity="1"
+            d="M0,256L16,256C32,256,64,256,96,234.7C128,213,160,171,192,149.3C224,128,256,128,288,138.7C320,149,352,171,384,202.7C416,235,448,277,480,261.3C512,245,544,171,576,149.3C608,128,640,160,672,160C704,160,736,128,768,117.3C800,107,832,117,864,144C896,171,928,213,960,218.7C992,224,1024,192,1056,170.7C1088,149,1120,139,1152,138.7C1184,139,1216,149,1248,144C1280,139,1312,117,1344,144C1376,171,1408,245,1424,282.7L1440,320L1440,0L1424,0C1408,0,1376,0,1344,0C1312,0,1280,0,1248,0C1216,0,1184,0,1152,0C1120,0,1088,0,1056,0C1024,0,992,0,960,0C928,0,896,0,864,0C832,0,800,0,768,0C736,0,704,0,672,0C640,0,608,0,576,0C544,0,512,0,480,0C448,0,416,0,384,0C352,0,320,0,288,0C256,0,224,0,192,0C160,0,128,0,96,0C64,0,32,0,16,0L0,0Z"></path>
+        </svg>
+        <div id="skillsMainHeading">
+          <h3>Skills</h3>
+        </div>
+        <div class="Progresscontainer">
+          <h3 style="font-size: 2vw; margin-bottom: 2vw">Professional Skills</h3>
+          <h5 style="font-size: 1.3vw; margin: 2vw 0 1vw 0">Technologies:</h5>
+
+          <div class="progressbar-item">
+            <h4 class="progress-title">HTML5</h4>
+            <div progress-bar data-percentage="99%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progressbar-item">
+            <h4 class="progress-title">CSS3</h4>
+            <div progress-bar data-percentage="94%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progressbar-item">
+            <h4 class="progress-title">JavaScript</h4>
+            <div progress-bar data-percentage="80%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progressbar-item">
+            <h4 class="progress-title">JAVA</h4>
+            <div progress-bar data-percentage="55%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progressbar-item">
+            <h4 class="progress-title">Cpp</h4>
+            <div progress-bar data-percentage="30%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <h5 style="font-size: 1.3vw; margin: 2vw 0 1vw 0">frameworks & Librarys:</h5>
+          <div class="progressbar-item">
+            <h4 class="progress-title">React</h4>
+            <div progress-bar data-percentage="40%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progressbar-item">
+            <h4 class="progress-title">GSAP JS</h4>
+            <div progress-bar data-percentage="75%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progressbar-item">
+            <h4 class="progress-title">Locomotive JS</h4>
+            <div progress-bar data-percentage="55%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progressbar-item">
+            <h4 class="progress-title">Tailwind CSS</h4>
+            <div progress-bar data-percentage="80%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progressbar-item">
+            <h4 class="progress-title">Bootstrap</h4>
+            <div progress-bar data-percentage="60%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <h5 style="font-size: 1.3vw; margin: 2vw 0 1vw 0">Creative Technoloogies:</h5>
+          <div class="progressbar-item">
+            <h4 class="progress-title">Photoshop</h4>
+            <div progress-bar data-percentage="97%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progressbar-item">
+            <h4 class="progress-title">Adobe Premiere Pro</h4>
+            <div progress-bar data-percentage="83%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progressbar-item">
+            <h4 class="progress-title">3D Blender</h4>
+            <div progress-bar data-percentage="35%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progressbar-item">
+            <h4 class="progress-title">OBS Studio</h4>
+            <div progress-bar data-percentage="96%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div onclick="location.href='#section4'" class="nextPage4"><div>↓</div></div>
+      </div>
+
+      <div id="section4" class="section4 sections">
+        <svg id="svgDesign1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#00292c"
+            fill-opacity="1"
+            d="M0,160L48,154.7C96,149,192,139,288,128C384,117,480,107,576,122.7C672,139,768,181,864,165.3C960,149,1056,75,1152,58.7C1248,43,1344,85,1392,106.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+        <svg id="svgDesign2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#002c2f" fill-opacity="1" d="M0,160L1440,224L1440,320L0,320Z"></path>
+        </svg>
+        <div id="IntractDiv">
+  <h3>Let's build something amazing together.</h3>
+  <h5>I design & develop modern, responsive websites and web apps.</h5>
+  <div id="button">Get in Touch</div>
+</div>
+
+        <!-- <h5 id="communityHeading1">OUR COMMUNITY</h5> -->
+        <h5 id="communityHeading2">
+          <span id="LovedLine" style="color: #099ca7; font-family: Anokha; letter-spacing: 2px"
+            >Top 3 Projects </span
+          ><span id="LikedLine" style="font-weight: 400; font-family: Cabin Sketch Regular;">Pin here.</span>
+        </h5>
+        <div id="communitiess">
+          <div id="community">
+            <div class="clm" id="clm1">
+              <div id="clmDtls1" class="clmDtls"><img src="./images/Picsart_25-05-19_18-24-51-281.jpg" /></div>
+              <div id="clmDtls2" class="clmDtls"><img src="./images/Picsart_25-05-30_01-29-38-326.jpg" /></div>
+              <div id="clmDtls3" class="clmDtls">
+                <p style="color: #000; padding: 10px 20px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nihil quo porro facilis velit similique
+                  fugiat itaque veniam quos culpa eos, odio modi quidem accusamus praesentium nisi quaerat? Ratione
+                  magni inventore aliquam commodi quos libero eum quisquam deserunt expedita facilis earum corporis ab,
+                  nam culpa molestias exercitationem nisi doloribus harum illum nobis repudiandae obcaecati omnis!
+                  Sapiente placeat nisi ullam maxime nesciunt pariatur accusamus odio repudiandae officia! Accusantium a
+                  qui hic eum magnam nobis earum labore nam vel facere maxime voluptate aut reiciendis illum, tempore
+                  laborum velit doloribus iure sunt in. Saepe nostrum labore aperiam veritatis dolore laborum quia, in
+                  rem.
+                </p>
+              </div>
+            </div>
+            <div class="clm" id="clm2">
+              <div id="clmDtls1" class="clmDtls">
+                <p style="color: #000; padding: 10px 20px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nihil quo porro facilis velit similique
+                  fugiat itaque veniam quos culpa eos, odio modi quidem accusamus praesentium nisi quaerat? Ratione
+                  magni inventore aliquam commodi quos libero eum quisquam deserunt expedita facilis earum corporis ab,
+                  nam culpa molestias exercitationem nisi doloribus harum illum nobis repudiandae obcaecati omnis!
+                  Sapiente placeat nisi ullam maxime nesciunt pariatur accusamus odio repudiandae officia! Accusantium a
+                  qui hic eum magnam nobis earum labore nam vel facere maxime voluptate aut reiciendis illum, tempore
+                  laborum velit doloribus iure sunt in. Saepe nostrum labore aperiam veritatis dolore laborum quia, in
+                  rem.
+                </p>
+              </div>
+              <div id="clmDtls2" class="clmDtls"><img src="./images/Picsart_25-05-30_01-29-38-326.jpg" /></div>
+              <div id="clmDtls3" class="clmDtls"><img src="./images/Picsart_25-05-19_18-24-51-281.jpg" /></div>
+            </div>
+            <div class="clm" id="clm3">
+              <div id="clmDtls1" class="clmDtls"><img src="./images/Picsart_25-05-19_18-24-51-281.jpg" /></div>
+              <div id="clmDtls2" class="clmDtls"><img src="./images/Picsart_25-05-30_01-29-38-326.jpg" /></div>
+              <div id="clmDtls3" class="clmDtls">
+                <p style="color: #000; padding: 10px 20px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nihil quo porro facilis velit similique
+                  fugiat itaque veniam quos culpa eos, odio modi quidem accusamus praesentium nisi quaerat? Ratione
+                  magni inventore aliquam commodi quos libero eum quisquam deserunt expedita facilis earum corporis ab,
+                  nam culpa molestias exercitationem nisi doloribus harum illum nobis repudiandae obcaecati omnis!
+                  Sapiente placeat nisi ullam maxime nesciunt pariatur accusamus odio repudiandae officia! Accusantium a
+                  qui hic eum magnam nobis earum labore nam vel facere maxime voluptate aut reiciendis illum, tempore
+                  laborum velit doloribus iure sunt in. Saepe nostrum labore aperiam veritatis dolore laborum quia, in
+                  rem.
+                </p>
+              </div>
+            </div>
+            <div id="fade1"></div>
+            <div id="fade2"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="section5" class="section5 sections">
+        
+        <div id="testt"></div>
+        <svg id="svgDesign1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#000000"
+            fill-opacity="1"
+            d="M0,160L0,64L288,64L288,128L576,128L576,96L864,96L864,96L1152,96L1152,256L1440,256L1440,0L1152,0L1152,0L864,0L864,0L576,0L576,0L288,0L288,0L0,0L0,0Z"></path></svg
+        ><svg id="svgDesign2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#000000"
+            fill-opacity="1"
+            d="M0,224L0,160L120,160L120,160L240,160L240,0L360,0L360,224L480,224L480,160L600,160L600,96L720,96L720,96L840,96L840,192L960,192L960,64L1080,64L1080,160L1200,160L1200,160L1320,160L1320,64L1440,64L1440,320L1320,320L1320,320L1200,320L1200,320L1080,320L1080,320L960,320L960,320L840,320L840,320L720,320L720,320L600,320L600,320L480,320L480,320L360,320L360,320L240,320L240,320L120,320L120,320L0,320L0,320Z"></path>
+        </svg>
+        <div id="blackDiv5"></div>
+        <div id="blackDiv6"></div>
+        <div id="blackDiv55"></div>
+        <div id="mainHeading5577">Yashh Penchi</div>
+        <footer>
+          <div id="bottomHalf">
+            <h4 id="madeWith">
+              Made with Yashh Penchi ❣️ - © 2025 Yashh.  | Indore madhyaPredesh India | !!...
+            </h4>
+            <h5 id="SocialIDS">
+              <a id="email" href="">Email</a><a id="instaaa" href="#">Instagram</a><a id="x" href="">Twitter/ X</a>
+              <a id="facebookkk" href="">Facebook</a><a id="whatsappp" href="">Whatsapp</a>
+              <a id="linkdin" href="">Linkdin</a>
+            </h5>
+          </div>
+        </footer>
+      </div>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/animated-counter-prograssbar.js"></script>
+    <script src="./scripts/uniqueItems.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

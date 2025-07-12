@@ -1,0 +1,181 @@
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+  header nav {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    gap: 15px;
+  }
+  header nav ul {
+    gap: 15px;
+  }
+  header nav #blog{
+    display: none;
+  }
+  header nav #secondNav{
+    display: none;
+  }
+  header nav ul li a {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+  #shopBtn {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  #cart, #secondNav {
+    font-size: 20px;
+  }
+  #secondNavBar {
+    width: 80%;
+    border-radius: 30px 0 0 30px;
+    right: -100%;
+  }
+  #secondNavBar nav {
+    top: 15%;
+  }
+  #inputSearch {
+    width: 90%;
+    left: 5%;
+    height: 40px;
+  }
+  #inputSearch input {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  #socialIconsForSecondNav {
+    font-size: 12px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .sections {
+    padding: 0 10px;
+  }
+  .section1 #content h3 {
+    font-size: 8vw;
+  }
+  .section1 #content p {
+    font-size: 4vw;
+    line-height: 1.5em;
+  }
+  .section1 #content #buttons button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+  .nextPage1 {
+    position: absolute;
+    top: 84%;}
+  .section2 #texts h4 {
+    font-size: 5vw;
+  }
+  .section2 #texts p {
+    font-size: 3vw;
+    line-height: 1.5em;
+  }
+  .categoriesss {
+    flex-direction: column;
+  }
+  .categories {
+    width: 80%;
+    margin: 15px auto;
+  }
+  #CateshowMore {
+    padding: 8px 20px;
+  }
+  .section3{
+    height: 124vh;
+  }
+  #section3 #skillsMainHeading {
+    top: 17%;}
+  .section3 #bookMainHeading h3 {
+    font-size: 7vw;
+  }
+  .section3 #svgDesign{
+    top: -0.5%;
+  }
+  #bookShowBox {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bookShow {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+  #addToCartBtn {
+    font-size: 12px;
+    padding: 5px 10px;
+    left: 10px;
+    top: auto;
+    bottom: 10px;
+  }
+  .section4 #IntractDiv{
+    top: 12%;
+  }
+  .section4 #IntractDiv h3 {
+    font-size: 6vw;
+    line-height: 1.2em;
+  }
+  .section4 #IntractDiv h5 {
+    font-size: 3vw;
+  }
+  .section4 #button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  #communitiess{
+    top: 29%;
+  }
+  .section5 #ourPeople {
+    font-size: 3vw;
+  }
+  #joinn {
+    font-size: 5vw;
+    line-height: 1.5em;
+  }
+  footer #SocialIDS {
+    font-size: 3vw;
+  }
+  footer #cntcts a {
+    font-size: 3vw;
+  }
+  .section4 #IntractDiv {
+    width: 95%;
+      height: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section4 #IntractDiv h3 {
+    font-size: 6vw;
+  }
+  .section4 #IntractDiv h5 {
+    font-size: 3vw;
+  }
+  .section4 #button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .section4 #svgDesign1 {
+    top: -5px;}
+.section4 #communityHeading1 {
+  top: 22%;
+  font-size: 3vw;
+}
+.section4 #communityHeading2 {
+  font-size: 5vw;
+top: 23%;}
+.section4 #communitiess {
+  top: 26%;
+}
+  .nextPage4 {
+    top: 95%;}
+    #section5 #svgDesign1 {
+      top: 54%;}
+      .section4 #svgDesign2 {
+        display: none;}
+      }
