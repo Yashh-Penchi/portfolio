@@ -1,14 +1,128 @@
 .Progresscontainer {
-    width: 90%;
+    width: 80%;
     max-width: 960px;
     position: relative;
     z-index: 3;
-    top: 7%;
+    top: 10%;
     padding: 0% 15px 0 15px;
 }
+.Progresscontainer h5{
+    font-size: 1.3rem;
+}
+#technologiesContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+#technologiesContainer .techBox {
+    width: 8vw;
+    margin: 10px auto 10px 0;
+height: 8vw;
+/* background-color: rgb(255, 255, 255); */
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+overflow: hidden;
+border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px #0000006b;
+  background: linear-gradient(45deg, #0000004b, #bbd1dc, #ffffff, #000000);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
 
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#technologiesContainer .techBox #img{
+    /* background-color: wheat; */
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#technologiesContainer .techBox #img img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+      box-shadow: 2px 2px 5px 0px #000000b5;
+}
+#technologiesContainer .techBox h4{
+    width: 90%;
+    height: 20%;
+    font-size: 1.2vw;
+    font-weight: 400;
+    text-align: center;
+    text-wrap-mode: nowrap;
+    color: #111;
+    /* background-color: red; */
+}
+#technologiesContainer .techBox1 {
+    width: 5vw;
+    height: 5vw;
+    margin: 10px 1vw 10px 0;
+    background-color: rgb(255, 255, 255);
+    /* background-color: red; */
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+overflow: hidden;
+border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px #0000006b;
+}
+#technologiesContainer .techBox1 #img{
+    /* background-color: wheat; */
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#technologiesContainer .techBox1 #img img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+      box-shadow: 2px 2px 5px 0px #000000b5;
+}
+#technologiesContainer .techBox1 h4{
+    width: 90%;
+    height: 20%;
+    font-size: 0.7vw;
+    font-weight: 400;
+    text-align: center;
+    text-wrap-mode: nowrap;
+    color: #111;
+    /* background-color: red; */
+}
+
+#progressBarItems{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .progressbar-item {
     margin-bottom: 15px;
+    width: 40%;
+    margin: 0.5rem 2rem ;
 }
 
 .progress-bar {
@@ -70,7 +184,21 @@
 
 .progress-fill {
     height: 6px;
-    background: var(--progressbar-fill, linear-gradient(to right, #B464FF 0%, #3C64EB 100%));
     width: 0%;
     border-radius: 6px;
+    background: var(--progressbar-fill, linear-gradient(to right, #B464FF 0%, #3C64EB 50%, #B464FF 100%));
+ background-size: 400% 400%;
+  animation: gradientLineFill 5s ease infinite;
+}
+
+@keyframes gradientLineFill {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

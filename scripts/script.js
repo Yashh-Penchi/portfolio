@@ -1,32 +1,102 @@
+document.addEventListener('DOMContentLoaded', () => {
+
+  const Cursor = document.getElementById('cursor');
+  const innerCursor = document.getElementById('cursorInner');
+  gsap.to(Cursor,{
+  rotation: 360,
+  duration: 2,
+  repeat: -1,
+  ease: 'linear',
+  transformOrigin: "50% 50%"
+})
+
+document.addEventListener("mousemove", (dtls) => {
+gsap.to(Cursor,{
+  x: dtls.clientX,
+  y: dtls.clientY,
+  duration: 0.3,
+  delay: 0.01,
+  ease: "Power2.inOut",
+})
+gsap.to(innerCursor, {
+  duration:0,
+  x: dtls.clientX,
+  y: dtls.clientY,
+  ease: "Power2.inOut",
+  });
+
+  
+})
+document.getElementById("section3").addEventListener("mouseenter", (e) =>{
+  Cursor.classList.add('cursorList')
+  Cursor.classList.remove('cursorBG')
+  gsap.to(innerCursor, {
+    background: '#00c3ff76',
+     width: 5,
+  height: 5,
+  })
+})
+document.getElementById("section3").addEventListener("mouseleave", (e) =>{
+  Cursor.classList.remove('cursorList')
+  Cursor.classList.add('cursorBG')
+  gsap.to(innerCursor, {
+    background: '#ffffffd2',
+     width: 7.5,
+  height: 7.5,
+  })
+})
+
+function cursorSection2() {
+  document.addEventListener("mousemove", (dtls) => {
+    gsap.to('.section2 #effect3',{
+      x: dtls.clientX - 220,
+      y: dtls.clientY - 570,
+      duration: 0.2,
+      delay: 0.01,
+      ease: "Power2.inOut",
+    })
+  })
+}
+function cursorSection2Hide() {
+  document.querySelector(".section2").addEventListener("mousemove", (dtls) => {
+    gsap.to('.section2 #effect3',{
+      x: dtls.clientX - 220,
+      y: dtls.clientY - 570,
+      duration: 0.2,
+      delay: 0.01,
+      ease: "Power2.inOut",
+    })
+  })
+}
+
+document.querySelector('#section4').addEventListener("mouseenter", () => {
+  Cursor.style.zIndex = '20';
+  innerCursor.style.zIndex = '21';
+})
+document.querySelector('#section4').addEventListener("mouseleave", () => {
+  Cursor.style.zIndex = '2';
+  innerCursor.style.zIndex = '3';
+})
+
+document.querySelector('.nextPage1').addEventListener("click", () =>{
+  cursorSection2();
+})
+
+})
+
 const nextPage2 = document.getElementById('nextPage2');
-const projectsNav = document.getElementById('projects');
-const skillsNav = document.getElementById('skillsNav');
 
 if(nextPage2){
   nextPage2.addEventListener("click", () => {
     document.body.style.overflowY = "overlay";
   });
 }
-projectsNav.addEventListener("click", () => {
-    document.body.style.overflowY = "overlay";
-  });
-  skillsNav.addEventListener("click", () => {
-    document.body.style.overflowY = "overlay";
-  });
+
+// onclick="document.body.style.overflowY = 'overlay';"
 
 
 // ----------------------- GSAP is here 
 function allGSAP() {
-  const Cursor = document.getElementById('cursor');
-document.addEventListener("mousemove", (dtls) => {
-gsap.to(Cursor,{
-  x: dtls.clientX + 150,
-  y: dtls.clientY + 65,
-  duration: 0.2,
-  delay: 0.01,
-  ease: "Power2.inOut",
-})
-})
 
 
 const secondNav = document.getElementById('secondNav');
@@ -127,12 +197,13 @@ secondNavClose.addEventListener("mouseleave",()=>{
 
 
 const mainLogo = document.querySelector("#mainHeader #logo h1");
-const navItems = document.querySelectorAll("#mainHeader nav ul li, #mainHeader nav ul a, #mainHeader nav span ");
+const navItems = document.querySelectorAll("#mainHeader nav ul li, #mainHeader nav ul a, #mainHeader nav #secondNav ");
 let tl = gsap.timeline();
 
 tl.from("#detailsSale marquee", {
   duration: 0.5,
   opacity: 0,
+  delay: 0.8,
   x: -1500,
 });
 tl.from("#socialIcon a", {
@@ -153,6 +224,11 @@ tl.from(navItems, {
   y: -100,
   stagger: 0.1,
 },"-=0.5");
+
+tl.from("#blog", {
+  opacity:0,
+  duration: 2,
+},"-=2")
 
 tl.from("#home #content h3", {
   duration: 0.3,
@@ -219,7 +295,7 @@ gsap.from("#IntractDiv", {
     scrollTrigger: {
     trigger: '#section4',
     scroller: "body",
-    start: 'top 75%',
+    start: 'top 65%',
   }
 });
 
@@ -294,6 +370,90 @@ gsap.from("#mainHeading5577", {
     scrub: 3,
   }
 });
+
+
+// skills section anim 
+
+function section3AnimRun() {
+ let tl10 = gsap.timeline({  delay: 0.8,
+});
+
+ tl10.from(".Progresscontainer h3", {
+  opacity: 0,
+  duration: 0.5,
+  ease: "Power2.inOut",
+  x: -100,
+ })
+ 
+ tl10.from(".techBox", {
+  duration: 0.2, 
+  opacity: 0,
+  x: -50,
+  stagger: 0.15,
+ })
+
+ tl10.from(".Progresscontainer h5", {
+  duration: 0.3, 
+  opacity: 0,
+  x: -100,
+  stagger: 3
+ }, '-=3')
 }
 
-allGSAP();
+ document.getElementById('skillsNav').addEventListener("click", () => {
+    section3AnimRun();
+  });
+
+  document.querySelector("#nextPage2").addEventListener("click", () => {
+    section3AnimRun();
+    });
+
+    document.querySelector("#techh1").addEventListener("mouseenter", () => {
+      gsap.to("#techh1", {
+      })
+    })
+
+}
+
+
+
+// loading -------------------------------------
+function loading() {
+  let path = document.querySelector("#loading svg path");
+  let length = path.getTotalLength(); // Get exact path length
+
+  gsap.set(path, {
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  let tl = gsap.timeline();
+
+  tl.to(path, {
+    strokeDashoffset: 0,
+    duration: 35,
+    ease: "power2.out",
+    once: true,
+  },'+=0.8');
+
+  tl.to("#loading", {
+    top: "-100%",
+    duration: 1,
+    once: true,
+    opacity:0.5,
+    ease: "power1.inOut"
+  },'-=31');
+
+  tl.to("#lineLoad #fill",{
+  width: '100%',
+    once: true,
+  duration:4,
+  ease: "power1.inOut",
+  onComplete: function () {
+    setTimeout(() => {
+      allGSAP();
+    }, 50); // 50ms = 0.05 second
+  }
+  },'-=35')
+}
+loading();

@@ -37,11 +37,21 @@
   }
 
 
-  document.getElementById('skillsNav').addEventListener("click", () => {
-  animateProgressBars();
-  });
+  // document.getElementById('section3').addEventListener("click", () => {
+  // animateProgressBars();
+  // });
 
-  document.querySelector("#nextPage2").addEventListener("click", () => {
-    animateProgressBars();
-  });
+  // document.querySelector("#nextPage2").addEventListener("click", () => {
+  //   animateProgressBars();
+  // });
+
+
+  let section3 = document.getElementById('section3');
+  ScrollTrigger.create({
+    trigger: section3,
+    start: "top 110%",
+    once: true,
+    onEnter: animateProgressBars
+  })
+
 })(jQuery);
