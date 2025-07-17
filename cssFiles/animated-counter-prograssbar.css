@@ -188,10 +188,10 @@ border-radius: 10px;
     border-radius: 6px;
     background: var(--progressbar-fill, linear-gradient(to right, #B464FF 0%, #3C64EB 50%, #B464FF 100%));
  background-size: 400% 400%;
-  animation: gradientLineFill 5s ease infinite;
+  animation: gradientLineFilll 5s ease infinite;
 }
 
-@keyframes gradientLineFill {
+@keyframes gradientLineFilll {
   0% {
     background-position: 0% 50%;
   }
