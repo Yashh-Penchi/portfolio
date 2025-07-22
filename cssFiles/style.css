@@ -72,9 +72,10 @@
   justify-content: center;
   flex-direction: column;
   /* background: #002C30; */
-    background: linear-gradient(45deg, #002529, #002C30);
+  /* background: linear-gradient(45deg, #002529, #002C30); */
+      background: linear-gradient(45deg, #002529, #033f44);
     background-repeat: no-repeat;
-  background-size: 400% 400%;
+    background-size: 400% 400%;
   pointer-events: none;
   animation: loadingAnim 10s linear infinite;
 }
@@ -91,6 +92,9 @@
   }
 }
 
+#loading svg{
+  width:394px;
+}
 #loading svg path {
   fill: transparent;
   stroke: #fff;
@@ -167,6 +171,7 @@ body {
   background-image: url(./images/download.svg);
   background-position: center;
   background-size: cover;
+user-select: none;
   background-repeat: no-repeat;
 }
 #headerLine #detailsSale {
@@ -186,7 +191,7 @@ body {
   justify-content: space-around;
   position: relative;
 }
-#socialIcon:hover {
+#headerLine #socialIcon:hover {
   left: 0.2%;
 }
 header {
@@ -239,6 +244,7 @@ header nav {
   margin-left: 2.5vw;
   display: flex;
   align-items: center;
+  user-select: none;
   justify-content: space-around;
   gap: 2vw;
 }
@@ -530,6 +536,9 @@ main {
   justify-content: space-evenly;
   flex-direction: column;
 }
+.section1 #content h3 span {
+  font-size: 2.5vw; margin-left: 0.5vw;position: relative;
+}
 .section1 #content h3 {
   font-size: 3.5vw;
   font-weight: 400;
@@ -686,7 +695,7 @@ main {
 #AboutHead {
   position: relative;
   font-size: 1.7vw;
-  top: 6%;
+  top: 6.5%;
   left: 50%;
   height: 4vw;
   width: max-content;
@@ -695,7 +704,7 @@ main {
   transition: top ease-in-out 0.2s;
 }
 #AboutHead:hover {
-  top: 3.5%;
+  top: 4.5%;
 }
 
 .section2 #content {
@@ -746,7 +755,7 @@ main {
 }
 
 .section2 #content #dtlsContent #socialIcons {
-  width: 30%;
+  width: 37%;
   /* background-color: #7c2626; */
   padding-top: 1vw;
   display: flex;
@@ -1467,7 +1476,7 @@ footer {
 #mainHeading5577 {
   position: absolute;
   z-index: 1001;
-  bottom: 6%;
+  bottom: 7%;
   font-family: Kleptocracy Titling;
   line-height: 2.5vw;
   border-bottom: 2px solid white;

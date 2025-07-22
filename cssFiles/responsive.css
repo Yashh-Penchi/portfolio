@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   header {
     flex-direction: column;
     gap: 10px;
@@ -11,23 +11,25 @@
     gap: 15px;
   }
   header nav ul {
-    gap: 15px;
+    gap: 25px;
+        justify-content: space-evenly;
   }
-  header nav #blog{
+  header nav #blog {
     display: none;
   }
-  header nav #secondNav{
+  header nav #secondNav {
     display: none;
   }
   header nav ul li a {
-    font-size: 14px;
+    font-size: 22px;
     padding: 10px 5px;
   }
   #shopBtn {
     font-size: 14px;
     padding: 5px 10px;
   }
-  #cart, #secondNav {
+  #project, #cart,
+  #secondNav {
     font-size: 20px;
   }
   #secondNavBar {
@@ -38,15 +40,7 @@
   #secondNavBar nav {
     top: 15%;
   }
-  #inputSearch {
-    width: 90%;
-    left: 5%;
-    height: 40px;
-  }
-  #inputSearch input {
-    font-size: 14px;
-    padding: 8px 10px;
-  }
+
   #socialIconsForSecondNav {
     font-size: 12px;
     flex-wrap: wrap;
@@ -55,20 +49,30 @@
   .sections {
     padding: 0 10px;
   }
+  .section1 #content {width: 93%;}
   .section1 #content h3 {
-    font-size: 8vw;
+    font-size: 5vw;
+    width: 650px;
+    margin-bottom: 40px;
+  }
+  .section1 #content h3 span {
+    font-size: 4.5vw;
+    margin-left: 0.5vw;
+    bottom: 40%;
   }
   .section1 #content p {
-    font-size: 4vw;
+    font-size: 3.5vw;
     line-height: 1.5em;
+            padding-left: 22px;
   }
   .section1 #content #buttons button {
     padding: 8px 15px;
-    font-size: 12px;
+    font-size: 19px;
   }
   .nextPage1 {
     position: absolute;
-    top: 84%;}
+    top: 84%;
+  }
   .section2 #texts h4 {
     font-size: 5vw;
   }
@@ -86,15 +90,16 @@
   #CateshowMore {
     padding: 8px 20px;
   }
-  .section3{
+  .section3 {
     height: 124vh;
   }
   #section3 #skillsMainHeading {
-    top: 17%;}
+    top: 17%;
+  }
   .section3 #bookMainHeading h3 {
     font-size: 7vw;
   }
-  .section3 #svgDesign{
+  .section3 #svgDesign {
     top: -0.5%;
   }
   #bookShowBox {
@@ -113,7 +118,7 @@
     top: auto;
     bottom: 10px;
   }
-  .section4 #IntractDiv{
+  .section4 #IntractDiv {
     top: 12%;
   }
   .section4 #IntractDiv h3 {
@@ -128,7 +133,7 @@
     padding: 5px 10px;
   }
 
-  #communitiess{
+  #communitiess {
     top: 29%;
   }
   .section5 #ourPeople {
@@ -146,7 +151,7 @@
   }
   .section4 #IntractDiv {
     width: 95%;
-      height: 7%;
+    height: 7%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -161,21 +166,299 @@
     padding: 6px 12px;
   }
   .section4 #svgDesign1 {
-    top: -5px;}
-.section4 #communityHeading1 {
-  top: 22%;
+    top: -5px;
+  }
+  .section4 #communityHeading1 {
+    top: 22%;
+    font-size: 3vw;
+  }
+  .section4 #communityHeading2 {
+    font-size: 5vw;
+    top: 23%;
+  }
+  .section4 #communitiess {
+    top: 26%;
+  }
+  .nextPage4 {
+    top: 95%;
+  }
+  #section5 #svgDesign1 {
+    top: 54%;
+  }
+  .section4 #svgDesign2 {
+    display: none;
+  }
+  
+.section2 #effect1 {
+  width: 50%;
+  height: 25%;
+  filter: blur(100px);
+  top: 17.5%;
+  left: 35%;
+}
+.section2 #effect2 {
+  width: 50%;
+  height: 35%;
+  filter: blur(60px);
+  top: 70%;
+  left: 75%;
+}
+.section2 #effect3 {
+  width: 20%;
+  height: 15%;
+  filter: blur(100px);
+  top: 75%;
+  left: 15%;
+}
+#AboutHead{
+  top: 18%;
+  font-size: 4vw;
+}
+}
+
+/* ---------------- Mobile width 480  */
+
+@media (max-width: 480px) {
+  #loading {
+    /* display: none; */
+  }
+
+  #lineLoad {
+    display: none;
+  }
+  #loading svg {
+    width: 200px;
+  }
+
+  #headerLine #socialIcon {
+    left: 3px;
+    transition: left ease 0.3s;
+  }
+  #headerLine #socialIcon:hover {
+    left: 5px;
+  }
+  #headerLine #socialIcon .responsiveNone {
+    display: none;
+  }
+  #mainHeader #logo {
+    left: 40px;
+    transition: left ease 0.3s;
+  }
+  #mainHeader #logo:hover {
+    left: 45px;
+  }
+      header nav ul {
+        justify-content: center;
+    }
+    header nav ul li a{
+      font-size: 16px;
+    }
+  .section1 #content {
+    width: 90%;
+    padding-top: 40px;
+  }
+  .section1 #content h3 {
+    width: 330px;
+    margin-bottom: 20px;
+  }
+  .section1 #content p {
+    padding-left: 20px;
+  }
+  .section1 #content #buttons {
+    gap: 1rem;
+  }
+  .section1 #content #buttons button{
+    font-size: 12px;
+  }
+    .nextPage1{
+      top: 85%;
+    }
+  .nextPage1 h5{
+    font-size: 15px;
+  }
+  #nextPage2{
+    top: 92%;
+  }
+  .nextPage4 {
+        top: 101%;
+    }
+  #AboutHead{
+    top: 18.5%;
+    font-size: 4vw;
+  }
+  #AboutHead:hover{top: 17%;}
+
+.section2 #content {
+  flex-direction: column;
+  margin-top: 32vw;
+  justify-content: space-between;
+}
+.section2 #content #Photo {
+  margin-bottom: 13px;
+  width: 60%;
+  background-image: url(../images/Picsart_25-05-19_18-24-51-281.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+        border-radius: 7px;
+}
+.section2 #content #Photo img{display: none;}
+#dtlsContent {
+    width: 96%;
+}
+.section2 #content #dtlsContent h3 {
+  font-size: 5vw;}
+  .section2 #content #dtlsContent p {font-size: 2.8vw; text-shadow: 2px 2px 2px #39483ab5;}
+  .section2 #content #dtlsContent #socialIcons {font-size: 4vw; gap: 4.5vw;padding: 2vw 0 1.5vw 0;}
+  .section2 #content #dtlsContent #contactBtn {
+    background-color: #073e429d;
+  }
+
+  .section3 #svgDesign {
+    width: 157%;
+    left: -80px;
+  }
+  #section3 #skillsMainHeading {
+    top: 15%;
+  }
+  #section3 #skillsMainHeading h3{
+   font-size: 7vw; 
+  }
+  .Progresscontainer {
+    top: 11%;
+  }
+  .Progresscontainer h3 {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+    /* margin-top: 14vw; */
+  }
+  .Progresscontainer h5 {
+    font-size: 4vw;
+  }
+  #technologiesContainer .techBox{
+    width: 14vw;
+    margin: 10px 10px 10px 0;
+    height: 14vw;
+    border-radius: 6px;
+  }
+  #technologiesContainer .techBox h4{
+    font-size: 2.7vw;
+  }
+  #technologiesContainer .techBox1{
+    width: 10vw;
+    margin: 10px 10px 10px 0;
+    height: 10vw;
+    border-radius: 4px;
+  }
+  #technologiesContainer .techBox1 h4{
+    font-size: 1.5vw;
+  }
+  #technologiesContainer .techBox #img img{
+      box-shadow: 2px 2px 5px 0px #00000000;
+  }
+
+  
+#progressBarItems{
+    justify-content: center;
+
+}
+.progressbar-item {
+            width: 37%;
+        margin: 0.5rem 1rem;
+}
+
+.progress-bar {
+    margin: 0 0 10px;
+    overflow: visible;
+    background: transparent;
+}
+
+ .section4{
+  height: 180vh;
+ }
+.section4 #IntractDiv {
+  top: 9%;
+  border-radius: 8px;
+}
+.section4 #IntractDiv #button{
+  font-size: 2.3vw;
+  padding: 0.7vw 2.7vw;
+}
+    .section4 #communityHeading2 {
+        top: 19%;
+    }
+    .section4 #communitiess {
+        top: 21%;
+    }
+    #afterCommunity {
+      font-size: 4vw;
+    }
+
+#moreProjectsDiv {
+  height: 7%;
+  top: 25%;
+}
+#extraProject5 {
+    top: -226%;
+}
+#saveralProject {
+    bottom: -27%;
+    font-size: 3vw;
+}
+
+
+.contact-container {
+  top: -8%;
+  width: 400px;
+}
+.contact-container p{
+  font-size: 18px;
+}
+.contact-container form{
+  padding-top: 15px;
+}
+#mainHeading5577{
+  line-height: 4.5vw;
+  font-size: 7vw;
+  bottom: 7%;
+}
+#svgDgn{
+  width: 173%;
+}
+footer{
+  bottom: -6%;
+}
+#madeWith{
   font-size: 3vw;
 }
-.section4 #communityHeading2 {
-  font-size: 5vw;
-top: 23%;}
-.section4 #communitiess {
-  top: 26%;
+#madeWith span{
+  display: block;
 }
-  .nextPage4 {
-    top: 95%;}
-    #section5 #svgDesign1 {
-      top: 54%;}
-      .section4 #svgDesign2 {
-        display: none;}
-      }
+footer #bottomHalf {
+  height: 88%;
+}
+
+
+
+
+
+  }
+
+
+@media (min-width: 480px) {
+  .section2 #content #Photo {
+        margin-bottom: 20px;
+  }}
+@media (max-width: 380px) {
+  header nav ul  {
+        gap: 1rem;
+        width: 100%;
+  }}
+@media (max-width: 1100px) {
+  header nav ul  {
+        gap: 1.5rem;
+  }}
+@media (max-width: 1290px) {
+  #blog {
+        display: none;
+  }}
