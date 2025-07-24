@@ -517,7 +517,7 @@ main {
 .section1 {
   padding-top: 5%;
   height: 90vh;
-  background-image: url(../images/jonatan-pie-h8nxGssjQXs-unsplash.jpg);
+  background-image: url(../images/jonatan-pie-h8nxGssjQXs-unsplash.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1528,7 +1528,7 @@ footer #bottomHalf {
   align-items: center;
   width: 100%;
   position: absolute;
-  top: 97%;
+  top: 90%;
   font-size: 1.1vw;
   font-weight: 100;
 }
