@@ -72,9 +72,13 @@
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#explore">About</a></li>
+          <li class="secondPageAnim"><a href="#explore">About</a></li>
           <li id="skillsNav" onclick="document.body.style.overflowY = 'overlay';"><a href="#section3">Skills</a></li>
-          <a href="#section4" id="projects" onclick="document.body.style.overflowY = 'overlay';">Projects</a>
+          <a href="#section4" id="projects" onclick="
+                          document.body.style.overflowY = 'overlay';
+                          document.getElementById('IntractDiv').style.opacity = '1';
+                          document.getElementById('IntractDiv').style.transform = 'translate(-50%, -75px)';
+                          ">Projects</a>
         </ul>
         <span id="blog" onclick="document.body.style.overflowY = 'overlay';"><h5><a href="#section5"><span>Contact</span><span>Contact</span></a></h5></span>
         <span id="secondNav"><h5>⚙️</h5></span>
@@ -85,12 +89,13 @@
 
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#explore">About</a></li>
-            <li><a href="#section3" onclick="document.body.style.overflowY = 'overlay';">Skills</a></li>
+            <li class="secondPageAnim1"><a href="#explore">About</a></li>
+            <li id="skillsNavGear"><a href="#section3" onclick="document.body.style.overflowY = 'overlay';">Skills</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Term & Conditions</a></li>
             <li><a href="#section5">Blog</a></li>
             <li><a href="#section5" onclick="document.body.style.overflowY = 'overlay';">Contact us</a></li>
+            <li><a id="toggleContextBtn">Debug</a></li>
           </ul>
           <div id="socialIconsForSecondNav">
             <a class="emaillll" href="mailto:iyash321@gmail.com">Email</a><a class="instaaaa" href="https://instagram.com/21__Yashh" target="_blank">Instagram</a><a class="x xx" href="https://x.com/21__Yashh" target="_blank">X/ Twitter</a><a class="linkedinnnn" href="https://www.linkedin.com/in/yashh-lodha/" target="_blank">LinkedIn</a>
@@ -152,7 +157,7 @@
               <a href="mailto:iyash321@gmail.com">Email</a><a href="https://www.linkedin.com/in/yashh-lodha/" target="_blank" style="color: #0077B5;">Linkdin</a><a href="https://github.com/Yashh-Penchi" target="_blank">GitHub</a><a href="https://instagram.com/21__Yashh" target="_blank">Instagram</a
               ><a href="https://x.com/21__Yashh" target="_blank">X</a>
             </div>
-            <button id="contactBtn">Contact me</button>
+            <button id="contactBtn" class="contacttBtn">Contact me</button>
           </div>
           <div onclick="location.href='#section3'" id="nextPage2"><div>↓</div></div>
         </div>
@@ -173,11 +178,11 @@
           <h5 style=" margin: 2vw 0 1vw 0">Technologies & Languages and frameworks & Librarys:</h5>
 
           <div id="technologiesContainer">
-            <div id="techh1" class="techBox"><div id="img"><img loading="lazy" src="./images/techImg/java.png"></div><h4>Java</h4></div>
-            <div id="techh2" class="techBox"><div id="img"><img loading="lazy" src="./images/techImg/cpp.png"></div><h4>C++</h4></div>
-            <div id="techh3" class="techBox"><div id="img"><img loading="lazy" src="./images/techImg/js.png"></div><h4>JS</h4></div>
-            <div id="techh4" class="techBox"><div id="img"><img loading="lazy" src="./images/techImg/html.png"></div><h4>HTML5</h4></div>
-            <div id="techh5" class="techBox"><div id="img"><img loading="lazy" src="./images/techImg/css3.png"></div><h4>CSS3</h4></div>
+            <div id="techh1" class="techBox"><div id="img"><img loading="lazy" src="./images/techImg/java.webp"></div><h4>Java</h4></div>
+            <div id="techh2" class="techBox"><div id="img"><img loading="lazy" src="./images/techImg/cpp.webp"></div><h4>C++</h4></div>
+            <div id="techh3" class="techBox"><div id="img"><img loading="lazy" src="./images/techImg/js.webp"></div><h4>JS</h4></div>
+            <div id="techh4" class="techBox"><div id="img"><img loading="lazy" src="./images/techImg/html.webp"></div><h4>HTML5</h4></div>
+            <div id="techh5" class="techBox"><div id="img"><img loading="lazy" src="./images/techImg/css3.webp"></div><h4>CSS3</h4></div>
             <div id="techh6" class="techBox"><div id="img"><img loading="lazy" src="./images/techImg/react.png"></div><h4>React</h4></div>
           </div>
          
@@ -185,17 +190,17 @@
           
           <div id="technologiesContainer" style="margin-bottom: 1wm; background-color: rgba(0, 0, 255, 0);">
             <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/Tailwind-Css.png"></div><h4>Tailwind</h4></div>
-            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/GSAP JS.png"></div><h4>GSAP</h4></div>
-            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/LOCO.png"></div><h4>Locomotive</h4></div>
-            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/adobePhotoshop.png"></div><h4>Photoshop</h4></div>
-            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/figma.png"></div><h4>Figma</h4></div>
-            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/CANVA Tool.png"></div><h4>Canva</h4></div>
-            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/github.png"></div><h4>Github</h4></div>
+            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/GSAP JS.webp"></div><h4>GSAP</h4></div>
+            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/LOCO.webp"></div><h4>Locomotive</h4></div>
+            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/adobePhotoshop.webp"></div><h4>Photoshop</h4></div>
+            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/figma.webp"></div><h4>Figma</h4></div>
+            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/CANVA Tool.webp"></div><h4>Canva</h4></div>
+            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/github.webp"></div><h4>Github</h4></div>
             <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/PR.png"></div><h4>Premier Pro</h4></div>
-            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/blender 3D.png"></div><h4>Blender</h4></div>
-            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/OBS-Studio.png"></div><h4>OBS Studio</h4></div>
+            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/blender 3D.webp"></div><h4>Blender</h4></div>
+            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/OBS-Studio.webp"></div><h4>OBS Studio</h4></div>
             <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/VS-LOGO.png"></div><h4>VS Code</h4></div>
-            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/intellij-idea.png"></div><h4>IntelliJ IDEA</h4></div>
+            <div class="techBox techBox1"><div id="img"><img loading="lazy" src="./images/techImg/intellij-idea.webp"></div><h4>IntelliJ IDEA</h4></div>
           </div>
           <h5 style=" margin: 2vw 0 1vw 0; padding-top: 15px;">Creativity Tools 🛠️:</h5>
          <div id="progressBarItems">
@@ -329,7 +334,7 @@
               </div>
             </div>
             <div class="clm" id="clm2">
-              <div id="clmDtls1" class="clmDtls"><video loop muted autoplay preload="auto" playsinline width="100%" src="./images/Final.mp4"></video></div>
+              <div id="clmDtls1" class="clmDtls"><video loop muted autoplay preload="auto" playsinline width="100%" src="./images/Final.webm"></video></div>
               <div id="clmDtls2" class="clmDtls"><img loading="lazy" src="./images/preview.webp" /></div>
               <div id="clmDtls3" class="clmDtls"><img loading="lazy" src="./images/Preview22.webp"></div>
             </div>
@@ -343,7 +348,7 @@
           </div>
         </div>
 
-        <h4 id="afterCommunity">More Projects</h4>
+        <!-- <h4 id="afterCommunity">More Projects</h4>
         <div id="moreProjectsDiv">
           <div class="extraProjects" id="extraProject1"><img loading="lazy" src="./images/moreProject1.webp"></div>
           <div class="extraProjects" id="extraProject2"><img loading="lazy" src="./images/moreProject3.png"></div>
@@ -354,7 +359,7 @@
           <div class="extraProjects" id="extraProject7"><img loading="lazy" src="./images/moreProject7.png"></div>
         </div>
 
-        <h5 id="saveralProject">"I have several other projects, and I'll share them lether!"</h5>
+        <h5 id="saveralProject">"I have several other projects, and I'll share them lether!"</h5> -->
 
       </div>
 
@@ -364,31 +369,58 @@
         <svg id="svgDgn1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,96L60,101.3C120,107,240,117,360,112C480,107,600,85,720,101.3C840,117,960,171,1080,176C1200,181,1320,139,1380,117.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
 
 <div class="contact-container">
-    <h1>Contact Us</h1>
-    <p>We’d love to hear from you!</p>
-    <form id="contactForm" action="https://formspree.io/f/mldllwga" method="POST">
-      <div class="input-box">
-        <input type="text" name="name" required>
-        <label>Name</label>
-      </div>
-      <div class="input-box">
-        <input type="email" name="email" required>
-        <label>Email</label>
-      </div>
-      <div class="input-box">
-        <textarea name="message" rows="4" required></textarea>
-        <label>Message</label>
-      </div>
-      <button id="connectSubmit" type="submit">Send Message</button>
-    </form>
-  </div>
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Thank you for contacting us! We will get back to you soon⚡.');
-});
+  <h1>Contact Us</h1>
+  <p>We’d love to hear from you!</p>
+  <form id="contactForm" action="https://formspree.io/f/mldllwga" method="POST">
+    <div class="input-box">
+      <input type="text" name="name" id="name" required>
+      <label>Name</label>
+    </div>
+    <div class="input-box">
+      <input type="email" name="email" id="email" required>
+      <label>Email</label>
+    </div>
+    <div class="input-box">
+      <textarea name="message" id="message" rows="4" required></textarea>
+      <label>Message</label>
+    </div>
+    <button id="connectSubmit" type="submit">Send Message</button>
+  </form>
+</div>
 
-  </script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // simple email regex
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name.length < 3) {
+      alert("Please enter a valid name (at least 3 characters).");
+      return;
+    }
+
+    if (!emailPattern.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    if (message.length < 10) {
+      alert("Message should be at least 10 characters long.");
+      return;
+    }
+
+    // Agar sab vlid hai tabhi form submit hoga
+    this.submit();
+
+    alert('✅ Thank you for contacting us! We will get back to you soon⚡.');
+  });
+</script>
+
 
         <div id="mainHeading5577">Yashh Penchi</div>
         <footer>
@@ -406,11 +438,12 @@
       </div>
     </main>
     
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./scripts/animated-counter-prograssbar.js"></script>
     <script src="./scripts/uniqueItems.js"></script>
     <script src="./scripts/script.js"></script>
-  </body>
+    </body>
 </html>

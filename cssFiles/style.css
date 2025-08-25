@@ -1,3 +1,15 @@
+::selection {
+  background: #004f51;
+  color: #fff;
+}
+
+::-moz-selection {   /* Firefox ke liye */
+  background: #00bfff76;
+  color: #fff;
+}
+
+
+
 /*----------------------- Scrollbar --------------------------------*/
 ::-webkit-scrollbar {
   width: 5px;
@@ -34,7 +46,7 @@
 }
 
 .cursorList{
-    background-image: url(../images/Cursor.png);
+    background-image: url(../images/Cursor.webp);
 }
 .cursorBG{
     backdrop-filter: blur(10px);
@@ -455,7 +467,7 @@ header nav ul li:hover a::after {
 
 #socialIconsForSecondNav {
   border-top: 2px solid #00393c;
-  margin-top: 6vw;
+  margin-top: 2.25vw;
   padding-top: 1vw;
   width: 90%;
   position: relative;
@@ -943,7 +955,8 @@ main {
 
 .section4 {
   background-color: #000;
-  height: 220vh;
+  height: 140vh;
+  padding: 0;
 }
 
 .section4 #effect1 {
@@ -1003,12 +1016,13 @@ main {
 .section4 #IntractDiv {
   width: 90%;
   user-select: none;
-  height: 10.5%;
+  /* height: 10.5%; */
+  padding: 15px 0;
   border-radius: 20px;
   position: absolute;
   z-index: 5;
   left: 50%;
-  top: 5%;
+  top: 10%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1080,13 +1094,13 @@ main {
 .section4 #communityHeading2 {
   text-align: center;
   position: relative;
-  top: 18%;
-  font-size: 3vw;
+  top: 30%;
+  font-size: 2.5vw;
 }
 .section4 #communitiess {
   /* background-color: rgb(255, 192, 192); */
   position: relative;
-  top: 21%;
+  top: 35%;
   width: 100%;
   height: 85vh;
   display: flex;
@@ -1464,7 +1478,7 @@ main {
 footer {
   position: absolute;
   z-index: 1000;
-  bottom: -4.5%;
+bottom: -16.5%;
   width: 100%;
   height: 29%;
   /* background-color: rebeccapurple; */
@@ -1528,12 +1542,22 @@ footer #bottomHalf {
   align-items: center;
   width: 100%;
   position: absolute;
-  top: 90%;
-  font-size: 1.1vw;
+  top: 45%;
+  font-size: 1vw;
   font-weight: 100;
 }
 #SocialIDS a {
-  transition: color ease 0.3s, text-shadow ease 0.3s;
+  transition: color ease 0.3s, text-shadow ease 0.3s, box-shadow ease 0.3s;
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, #00ffe0, #00bfff) 1;
+  padding: 8px 15px;
+  /* border-radius: 10px; */
+}
+
+#SocialIDS a:hover {
+  box-shadow: 0 0 25px #00ffe18b,
+              0 0 35px #00bfff8b,
+              0 0 55px #00bfff8b;
 }
 
 #instaaa:hover {
@@ -1542,7 +1566,7 @@ footer #bottomHalf {
   text-shadow: 0 0 3px #ff00bf;
 }
 #x:hover {
-  color: #5f5f5f;
+  /* color: #5f5f5f; */
   border-bottom: 2px solid #b6b6b6;
   text-shadow: 0 0 3px #b6b6b6;
 }
@@ -1562,7 +1586,7 @@ footer #bottomHalf {
   text-shadow: 0 0 3px #0059ff;
 }
 #email:hover {
-  color: #848484;
+  /* color: #848484; */
   text-shadow: 0 0 3px #ff00bf;
   border-bottom: 2px solid white;
 }

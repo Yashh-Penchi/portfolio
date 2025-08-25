@@ -249,14 +249,14 @@ tl.from("#home #content button", {
 
 
 
-document.querySelector('.nextPage1').addEventListener("click", () => {;
-  
-  let tl2 = gsap.timeline();
+function secondPageAnim() {
+
+let tl2 = gsap.timeline();
 
 tl2.from("#explore #content #Photo", {
-  delay: 0.2,
+  delay: 0.1,
   opacity: 0,
-  duration: 0.8,
+  duration: 0.6,
   // x: -100,
   rotateY: '-90deg',
   rotateX: '45deg',
@@ -274,18 +274,28 @@ tl2.from("#explore #dtlsContent p", {
 });
 tl2.from("#explore #dtlsContent #socialIcons a", {
   opacity: 0,
-  stagger: 0.2,
+  stagger: 0.1,
   duration: 0.8,
   x: -100,
 });
-tl2.from("#explore #dtlsContent #contactBtn", {
+tl2.from("#explore #dtlsContent .contacttBtn", {
   opacity: 0,
   stagger: 0.2,
-  duration: 0.8,
+  duration: 0.,
   x: -100,
 });
 
-});
+}
+
+document.querySelector('.nextPage1').addEventListener("click", () => {
+  secondPageAnim();
+  });
+document.querySelector('.secondPageAnim').addEventListener("click", () => {
+  secondPageAnim();
+  }); 
+document.querySelector('.secondPageAnim1').addEventListener("click", () => {
+  secondPageAnim();
+  }); 
 
 
 gsap.from("#IntractDiv", {
@@ -389,7 +399,7 @@ function section3AnimRun() {
   duration: 0.2, 
   opacity: 0,
   x: -50,
-  stagger: 0.15,
+  stagger: 0.13,
  })
 
  tl10.from(".Progresscontainer h5", {
@@ -401,6 +411,9 @@ function section3AnimRun() {
 }
 
  document.getElementById('skillsNav').addEventListener("click", () => {
+    section3AnimRun();
+  });
+ document.getElementById('skillsNavGear').addEventListener("click", () => {
     section3AnimRun();
   });
 
@@ -457,3 +470,39 @@ function loading() {
   },'-=35')
 }
 loading();
+
+
+
+function contextMenu() {
+ 
+  // button id="toggleContextBtn">Loading...</button>
+
+  let handler = (e) => e.preventDefault();
+
+  function updateButtonText() {
+    const isDisabled = localStorage.getItem("rcDisabled") === "true";
+    document.getElementById("toggleContextBtn").innerText = isDisabled
+      ? `Enable Debug`
+      : `Disable Debug`;
+  }
+
+  function applyState() {
+    const isDisabled = localStorage.getItem("rcDisabled") === "true";
+    if (isDisabled) {
+      document.addEventListener("contextmenu", handler);
+    } else {
+      document.removeEventListener("contextmenu", handler);
+    }
+    updateButtonText();
+  }
+
+  document.getElementById("toggleContextBtn").addEventListener("click", function () {
+    const isDisabled = localStorage.getItem("rcDisabled") === "true";
+    localStorage.setItem("rcDisabled", !isDisabled);
+    applyState();
+  });
+
+  applyState();
+  }
+
+  contextMenu();

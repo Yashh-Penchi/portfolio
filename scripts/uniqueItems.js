@@ -13,6 +13,3 @@ downloadCVBtn.addEventListener('click', () => {
   }, 3000);
 });
 
-
-
-

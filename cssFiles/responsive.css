@@ -437,6 +437,9 @@ footer{
 footer #bottomHalf {
   height: 88%;
 }
+#SocialIDS{
+  display: none;
+}
 
 
 
