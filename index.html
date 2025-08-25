@@ -55,6 +55,16 @@
       
   </div>
 
+  <div id="alertForMobile">
+    <button id="closeAlert">Close for Mobile</button>
+    <h4>For the best experience, please use a desktop browser.</h4>
+    <script>
+    document.getElementById("closeAlert").onclick = function() {
+      document.getElementById("alertForMobile").style.display = "none";
+    };
+  </script>
+  </div>
+
     <div id="headerLine">
       <div id="detailsSale">
         <marquee behavior="scroll" direction="left">
@@ -441,7 +451,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="./scripts/animated-counter-prograssbar.js"></script>
     <script src="./scripts/uniqueItems.js"></script>
     <script src="./scripts/script.js"></script>
