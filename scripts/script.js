@@ -358,7 +358,8 @@ gsap.from("#madeWith", {
   }
 });
 gsap.from("#SocialIDS a", {
-  duration: 0.5,
+  duration: 0.7,
+  rotate: '10deg',
   xPercent: -100,
   opacity: 0,
   stagger: 0.2,
