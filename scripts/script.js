@@ -79,6 +79,7 @@ document.querySelector('#section4').addEventListener("mouseleave", () => {
 })
 
 document.querySelector('.nextPage1').addEventListener("click", () =>{
+  // document.getElementById('audioBtn').style.opacity = '0';
   cursorSection2();
 })
 
@@ -450,10 +451,10 @@ function loading() {
   },'+=0.8');
 
   tl.to("#loading", {
-    top: "-100%",
+    top: "-150%",
     duration: 1,
     once: true,
-    opacity:0.5,
+    opacity: 0,
     ease: "power1.inOut"
   },'-=31');
 
@@ -506,3 +507,5 @@ function contextMenu() {
   }
 
   contextMenu();
+
+  

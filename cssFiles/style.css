@@ -28,6 +28,91 @@
   opacity: 0.5;
 }
 
+#tsparticles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  height: 90%;
+  width: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+#goToTopBtn {
+  background: #ffffff17;
+  backdrop-filter: blur(10px);  
+  border: none;          
+  border-radius: 3px;
+  border: 1px solid white;    
+  padding: 7px 15px;         
+  display: inline-flex;  
+  align-items: center;
+  justify-content: center;
+    position: fixed;
+  bottom: 10px;
+  z-index: 9997;
+  opacity: 0;
+  right: 10px;
+  transition: all 0.3s ease; 
+  user-select: none;
+}
+
+#goToTopBtn svg {
+  width: 20px;  
+  position: absolute;
+  height: 20px;
+  top: -75%;
+  transition: top 0.3s ease;
+}
+#goToTopBtn:hover svg {
+  top: -100%;
+}
+#goToTopBtn:active {
+  scale: 0.96;
+}
+
+#goToTopBtn span{
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+#audioBtn{
+  background: #ffffff17;
+  backdrop-filter: blur(10px);  
+  border: none;          
+  border-radius: 7px;
+  border: 1px solid white;    
+  padding: 7px 20px;         
+  display: inline-flex;  
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  z-index: 9997;
+  opacity: 0.1;
+  left: 5vw;
+  transition: all 0.3s ease; 
+  user-select: none;
+}
+#audioBtn:hover svg{rotate: 20deg; scale: 1.1;}
+#audioBtn:active{
+  scale: 0.96;
+}
+#audioBtn span{
+  padding-left: 5px;
+}
+#audioBtn:hover{
+  opacity: 0.8;
+}
+#audioBtn svg{
+  width: 20px;  
+  height: 20px;
+  top: -75%;
+  transition: all ease 0.2s;
+}
+
+
 
 #cursor {
   width: 40px;
@@ -597,7 +682,7 @@ main {
   box-shadow: inset 1px 2px 5px 0px #00000013;
 }
 
-#hireBtn #design {
+#openHireBtn #design {
   top: 50%;
   left: 100%;
   transform: translate(-100%, -50%);
@@ -606,7 +691,7 @@ main {
   display: none;
 }
 
-#hireBtn:hover #hireBtn #design::after {
+#openHireBtn:hover #openHireBtn #design::after {
   transform: translate(25%, -50%);
 }
 
@@ -660,6 +745,7 @@ main {
   background-color: #000;
   height: 100vh;
   background-position: center;
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -670,7 +756,7 @@ main {
   filter: blur(100px);
   border-radius: 50%;
   background-color: #42329c8e;
-  top: 17.5%;
+  top: 25%;
   left: 35%;
   transform: translate(-50%, -50%);
   position: absolute;
