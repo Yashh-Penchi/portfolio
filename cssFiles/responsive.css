@@ -262,6 +262,11 @@
     /* display: none; */
   }
 
+  body{
+  overflow-y: auto;
+
+  }
+
   #lineLoad {
     display: none;
   }
@@ -322,7 +327,7 @@
         top: 101%;
     }
   #AboutHead{
-    top: 18.5%;
+    top: 16.5%;
     font-size: 4vw;
   }
   #AboutHead:hover{top: 17%;}
@@ -334,14 +339,14 @@
 }
 .section2 #content #Photo {
   margin-bottom: 13px;
-  width: 60%;
+  width: 100%;
   background-image: url(../images/Picsart_25-05-19_18-24-51-281.webp);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
         border-radius: 7px;
 }
-.section2 #content #Photo img{display: none;}
+.section2 #content #Photo img{display: initial;}
 #dtlsContent {
     width: 96%;
 }
@@ -358,7 +363,7 @@
     left: -80px;
   }
   #section3 #skillsMainHeading {
-    top: 15%;
+    top: 13.5%;
   }
   #section3 #skillsMainHeading h3{
    font-size: 7vw; 
@@ -448,7 +453,7 @@
 
 .contact-container {
   top: -8%;
-  width: 400px;
+  width: 350px;
 }
 .contact-container p{
   font-size: 18px;
@@ -479,11 +484,6 @@ footer #bottomHalf {
 #SocialIDS{
   display: none;
 }
-
-
-
-
-
   }
 
 

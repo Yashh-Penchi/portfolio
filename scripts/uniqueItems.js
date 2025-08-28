@@ -89,7 +89,12 @@ downloadCVBtn.addEventListener('click', () => {
   audioBtn.addEventListener('click', () => {
 if (audio.paused) {
   audio.play();
-  audioBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+
+  audioBtn.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="800px" height="800px" viewBox="0 0 32 32" data-name="Layer 1" id="Layer_1"><title/><path d="M23.39,9.53l-3.73-2.1a16.27,16.27,0,0,1-3.41-3.82A1,1,0,0,0,15,3.26a1,1,0,0,0-.54,1.18l4.42,15.8a7,7,0,0,0-4.17-.09,6.9,6.9,0,0,0-3.62,2.35,4.3,4.3,0,0,0-.86,3.82c.55,2,2.63,3.23,5,3.23a7.28,7.28,0,0,0,2-.28c3.18-.88,5.19-3.65,4.49-6.17h0L17.64,8.39a6.08,6.08,0,0,0,1,.78l3.74,2.1a1,1,0,1,0,1-1.74ZM19.83,23.64h0c.39,1.43-1,3.13-3.1,3.71s-4.18-.14-4.58-1.57a2.36,2.36,0,0,1,.53-2.06,4.88,4.88,0,0,1,2.57-1.65,5.49,5.49,0,0,1,1.48-.2,4.3,4.3,0,0,1,1.58.28A2.37,2.37,0,0,1,19.83,23.64Z"/></svg>
+  <span>Playing Music ...</span>`;
+
+  setTimeout(() => {
+      audioBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
 <g>
 	<g>
 		<path d="M256,0C114.842,0,0,114.842,0,256s114.842,256,256,256s256-114.842,256-256S397.158,0,256,0z M256,482.743    C130.974,482.743,29.257,381.026,29.257,256S130.974,29.257,256,29.257S482.743,130.974,482.743,256S381.026,482.743,256,482.743z    "/>
@@ -116,6 +121,8 @@ if (audio.paused) {
 	</g>
 </g>
 </svg><span>Pause Audio</span>`;
+  }, 2000);
+
 } else {
   audio.pause();
     audioBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 28 28" fill="none"><path clip-rule="evenodd" d="M19.5 13.134C20.1667 13.5189 20.1667 14.4811 19.5 14.866L12 19.1962C11.3333 19.5811 10.5 19.0999 10.5 18.3301V9.66987C10.5 8.90007 11.3333 8.41895 12 8.80385L19.5 13.134ZM12.5 11.4019L17 14L12.5 16.5981V11.4019Z" fill="#fff" fill-rule="evenodd"/><path clip-rule="evenodd" d="M14 1C6.8203 1 1 6.8203 1 14C1 21.1797 6.8203 27 14 27C21.1797 27 27 21.1797 27 14C27 6.8203 21.1797 1 14 1ZM3 14C3 7.92487 7.92487 3 14 3C20.0751 3 25 7.92487 25 14C25 20.0751 20.0751 25 14 25C7.92487 25 3 20.0751 3 14Z" fill="#fff" fill-rule="evenodd"/></svg><span>Play Music</span>`;
