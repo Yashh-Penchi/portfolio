@@ -8,6 +8,24 @@
   color: #fff;
 }
 
+@font-face {
+  font-family: 'Gilroy ☞';
+  src: url('../Fonts/Gilroy-Bold.woff') format('woff'),
+       url('../Fonts/Gilroy-Light.woff') format('woff'),
+       url('../Fonts/Gilroy-Heavy.woff') format('woff'),
+       url('../Fonts/Gilroy-Medium.woff') format('woff'),
+       url('../Fonts/Cookie-Regular.woff') format('woff'),
+       url('../Fonts/kleptocracy.woff') format('woff');
+}
+@font-face {
+  font-family: 'kleptocracy ☞';
+  src: url('../Fonts/kleptocracy.woff') format('woff');
+}
+@font-face {
+  font-family: 'Cookie ☞';
+  src: url('../Fonts/Cookie-Regular.woff') format('woff');
+}
+
 /*----------------------- Scrollbar --------------------------------*/
 ::-webkit-scrollbar {
   width: 5px;
@@ -245,7 +263,7 @@ body {
   /* cursor: none; */
   height: 100%;
   width: 100%;
-  font-family: Gilroy ☞;
+  font-family: 'Gilroy ☞',  sans-serif;
   background-color: #000000;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -670,7 +688,7 @@ main {
   text-wrap: nowrap;
   display: inline-block;
   position: relative;
-  font-family: Gilroy ☞;
+  font-family: 'Gilroy ☞', sans-serif;
   font-weight: 300;
   z-index: 2;
   box-shadow: 1px 1px 3px 0px #000000b5;
@@ -914,11 +932,11 @@ main {
   text-wrap: nowrap;
   display: inline-block;
   position: relative;
-  font-family: Gilroy ☞;
+  font-family: 'Gilroy ☞', sans-serif;
   font-weight: 300;
   z-index: 2;
-    box-shadow: 0px 0px 15px #00fff7, 0px 0px 30px #00fff7, 0px 0px 45px #00fff7,;
-  /* box-shadow: 1px 1px 3px 0px #000000b5; */
+    /* box-shadow: 0px 0px 15px #00fff7, 0px 0px 30px #00fff7, 0px 0px 45px #00fff7; */
+  box-shadow: 1px 1px 3px 0px #000000b5;
   transition: background-color ease 0.3s;
 }
 .section2 #content #dtlsContent #contactBtn:hover {
@@ -1135,7 +1153,7 @@ main {
   line-height: 3vw;
   margin-top: 0.5vw;
   font-weight: 500;
-  font-family: Cookie;
+  font-family: 'Cookie ☞',  sans-serif;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -1575,7 +1593,7 @@ bottom: -16.5%;
   position: absolute;
   z-index: 1001;
   bottom: 7%;
-  font-family: Kleptocracy Titling;
+  font-family: 'kleptocracy ☞',  sans-serif;
   line-height: 2.5vw;
   border-bottom: 2px solid white;
   font-weight: 800;
